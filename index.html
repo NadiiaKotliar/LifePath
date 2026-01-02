@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Название вашего проекта | Учебный сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Навигация -->
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="logo">Life<span>Path</span></a>
+            <ul class="nav-menu">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#about">О проекте</a></li>
+                <li><a href="#steps">Этапы</a></li>
+                <li><a href="#testimonials">Отзывы</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+        </nav>
+    </header>
+
+    <!-- Главный экран -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Найдите свой уникальный путь</h1>
+                <p class="hero-subtitle">Индивидуальный подход к планированию вашего развития. Учебный проект для освоения веб-разработки.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Начать сейчас</a>
+                    <a href="#about" class="btn btn-secondary">Узнать больше</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-road"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О проекте -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">О нашем учебном проекте</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Идея</h3>
+                    <p>Этот сайт создан как учебный проект для практики HTML, CSS и JavaScript. Все элементы кода открыты для изучения.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Технологии</h3>
+                    <p>Чистая семантическая верстка, адаптивный дизайн, современный CSS (Flexbox/Grid). Без использования CMS.</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Обучение</h3>
+                    <p>Цель проекта — освоить на практике создание современных веб-сайтов с нуля. Каждый раздел — это новый навык.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Этапы -->
+    <section id="steps" class="section section-dark">
+        <div class="container">
+            <h2 class="section-title">Этапы создания сайта</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Планирование и дизайн</h3>
+                        <p>Прототипирование в Figma, подбор цветовой палитры и шрифтов, создание структуры.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Верстка</h3>
+                        <p>Семантическая разметка HTML, стилизация с помощью CSS, создание адаптивного дизайна.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Программирование</h3>
+                        <p>Добавление интерактивности с помощью JavaScript: меню, формы, анимации.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Публикация</h3>
+                        <p>Размещение на GitHub Pages, настройка домена, оптимизация скорости загрузки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Форма для контактов -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Свяжитесь для обратной связи</h2>
+            <div class="contact-form">
+                <form id="feedbackForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Иван Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="example@mail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение</label>
+                        <textarea id="message" rows="5" placeholder="Ваш отзыв или вопрос по учебному проекту..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить сообщение</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Life<span>Path</span> <small>Учебный проект</small></div>
+                <p>© 2024 Учебный проект по веб-разработке. Весь код доступен для изучения.</p>
+                <div class="footer-links">
+                    <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="#"><i class="fab fa-codepen"></i> CodePen</a>
+                    <a href="#"><i class="fas fa-code"></i> Исходники</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
